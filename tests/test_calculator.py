@@ -13,3 +13,13 @@ from src.calculator import multiply
 def test_multiply():
     assert multiply(4, 3) == 12
 
+from src.calculator import divide
+import pytest
+
+def test_divide():
+    assert divide(10, 2) == 5
+
+def test_divide_by_zero():
+    with pytest.raises(ZeroDivisionError):
+        divide(1, 0)
+
