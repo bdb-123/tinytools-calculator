@@ -12,3 +12,9 @@ pytest tests -v
 coverage run -m pytest tests
 coverage report --fail-under=100
 # TinyTools Calculator
+## Coverage
+
+```bash
+coverage run -m pytest tests
+coverage report --fail-under=100
+
